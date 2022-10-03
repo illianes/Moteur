@@ -1,4 +1,4 @@
-#include "SDLppTexture.hpp"
+ #include "SDLppTexture.hpp"
 #include "SDLppRenderer.hpp"
 #include "SDLppSurface.hpp"
 #include <SDL_image.h>

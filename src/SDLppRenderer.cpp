@@ -1,4 +1,4 @@
-#include "SDLppRenderer.hpp"
+ #include "SDLppRenderer.hpp"
 #include "SDLppTexture.hpp"
 #include "SDLppWindow.hpp"
 

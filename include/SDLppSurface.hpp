@@ -21,4 +21,4 @@ class SDLppSurface
 		SDLppSurface(SDL_Surface* surface);
 
 		SDL_Surface* m_surface;
-};
+}; 

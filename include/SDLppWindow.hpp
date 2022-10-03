@@ -2,9 +2,13 @@
 
 #include <string>
 #include <SDL.h>
+#include <InputTrigger.hpp>
 
 class SDLppWindow
-{
+{ 
+	/*virtual void onKeyDown(int key) override;
+	virtual void onKeyUp(int key) override;*/
+
 	public:
 		SDLppWindow(const std::string& title, int width, int height, Uint32 flags = 0);
 		SDLppWindow(const std::string& title, int x, int y, int width, int height, Uint32 flags = 0);

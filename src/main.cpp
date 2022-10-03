@@ -6,6 +6,7 @@
 #include "SDLppRenderer.hpp"
 #include "SDLppTexture.hpp"
 #include "Sprite.hpp"
+#include "InputManager.hpp"
 
 int main(int argc, char** argv)
 {
@@ -58,7 +59,7 @@ int main(int argc, char** argv)
 
         sprite.Draw(renderer, 147, 257);
         renderer.Present();
-    }
+    } 
 
     return 0;
 }

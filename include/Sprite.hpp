@@ -31,4 +31,4 @@ class Sprite // Une portion d'une texture
 		SDL_Rect m_rect;
 		int m_width;
 		int m_height;
-};
+}; 

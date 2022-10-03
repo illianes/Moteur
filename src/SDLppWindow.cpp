@@ -31,4 +31,4 @@ SDLppWindow& SDLppWindow::operator=(SDLppWindow&& window) noexcept
 {
 	std::swap(m_window, window.m_window);
 	return *this;
-}
+} 

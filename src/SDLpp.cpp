@@ -1,4 +1,4 @@
-#include "SDLpp.hpp"
+ #include "SDLpp.hpp"
 #include <SDL.h>
 
 SDLpp::SDLpp()

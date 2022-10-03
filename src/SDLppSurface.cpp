@@ -1,4 +1,4 @@
-#include "SDLppSurface.hpp"
+ #include "SDLppSurface.hpp"
 #include <SDL_image.h>
 #include <iostream>
 

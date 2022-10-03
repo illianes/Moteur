@@ -26,4 +26,4 @@ class SDLppTexture
 		SDLppTexture(SDL_Texture* texture);
 
 		SDL_Texture* m_texture;
-};
+}; 

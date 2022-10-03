@@ -26,4 +26,4 @@ class SDLppRenderer
 
 	private:
 		SDL_Renderer* m_renderer;
-};
+}; 

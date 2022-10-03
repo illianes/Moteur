@@ -45,4 +45,4 @@ void Sprite::Resize(int width, int height)
 void Sprite::SetRect(SDL_Rect rect)
 {
 	m_rect = rect;
-}
+} 
