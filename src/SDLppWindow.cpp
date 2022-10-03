@@ -1,7 +1,7 @@
 #include "SDLppWindow.hpp"
 
 SDLppWindow::SDLppWindow(const std::string& title, int width, int height, Uint32 flags) :
-	SDLppWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags)
+SDLppWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags)
 {
 }
 

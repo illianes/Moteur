@@ -52,6 +52,6 @@ SDLppTexture SDLppTexture::LoadFromSurface(SDLppRenderer& renderer, const SDLppS
 }
 
 SDLppTexture::SDLppTexture(SDL_Texture* texture) :
-	m_texture(texture)
+m_texture(texture)
 {
 }

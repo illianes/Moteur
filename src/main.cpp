@@ -14,7 +14,7 @@ int main(int argc, char** argv)
     SDLppWindow window("A4Engine", 1280, 720);
     SDLppRenderer renderer(window);
 
-    SDLppTexture runner = SDLppTexture::LoadFromFile(renderer, "assets/dio.png");
+    SDLppTexture runner = SDLppTexture::LoadFromFile(renderer, "assets/runner.png");
     Sprite sprite(runner);
     sprite.Resize(256, 256);
 
@@ -22,18 +22,29 @@ int main(int argc, char** argv)
 
     Uint64 lastUpdate = SDL_GetPerformanceCounter();
 
-    bool isOpen = true;
+    int frameIndex = 0;
+    int frameCount = 5;
     float timer = 0.0f;
 
-
-
+    bool isOpen = true;
     while (isOpen)
     {
         Uint64 now = SDL_GetPerformanceCounter();
-        float deltaTime = (float)(now - lastUpdate) / SDL_GetPerformanceFrequency();
+        float deltaTime = (float) (now - lastUpdate) / SDL_GetPerformanceFrequency();
         lastUpdate = now;
 
         timer += deltaTime;
+        if (timer > 0.1f)
+        {
+            timer -= 0.1f;
+            frameIndex++;
+            if (frameIndex >= frameCount)
+                frameIndex = 0;  
+
+            sprite.SetRect({ frameIndex * 32, 0, 32, 32 });
+
+            std::cout << frameIndex << std::endl;
+        }
 
         SDL_Event event;
         while (SDLpp::PollEvent(&event))

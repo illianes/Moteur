@@ -3,15 +3,15 @@
 #include "SDLppTexture.hpp"
 
 Sprite::Sprite(const SDLppTexture& texture) :
-	Sprite(texture, texture.GetRect())
+Sprite(texture, texture.GetRect())
 {
 }
 
 Sprite::Sprite(const SDLppTexture& texture, const SDL_Rect& rect) :
-	m_texture(texture),
-	m_rect(rect),
-	m_width(rect.w),
-	m_height(rect.h)
+m_texture(texture),
+m_rect(rect),
+m_width(rect.w),
+m_height(rect.h)
 {
 }
 
