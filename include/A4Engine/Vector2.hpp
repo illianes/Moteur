@@ -1,7 +1,6 @@
 #pragma once
 
 #include <ostream>
-#include <A4Engine/Vector2.inl>
 
 // Pas de macro d'export pour les templates (leur code n'étant pas compilé dans la dll)
 template<typename T>
@@ -25,6 +24,8 @@ struct Vector2
 	Vector2& operator/=(const Vector2& vec);
 	Vector2& operator/=(T value);
 
+	static Vector2 Rotate(const Vector2& vec, float degrees);
+
 	T x, y;
 };
 
@@ -40,4 +41,4 @@ using Vector2i = Vector2<int>;
 
 // Il est relativement courant de séparer le code template dans un fichier annexe, pour clarifier les headers
 // cela peut se faire en incluant un autre fichier (rappel, #include = copier-coller)
-
+#include <A4Engine/Vector2.inl>
